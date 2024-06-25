@@ -1,27 +1,77 @@
-:root{
-   
-    --gray :#BEC1BB;
-    --white:#fff;
-    --oldsilver: #828485;
-    --fuenteprimaria:"Open Sans", sans-serif;
-    --fuenteroboto:  "Roboto", sans-serif;
-    --larga: 45px;
-    --mediana: 16px;
-    --pequeña: 14px;
-    --Expequeña: 10px;
-
-    
-   
+:root {
+  --gray: #bec1bb;
+  --white: #fff;
+  --oldsilver: #828485;
+  --fuenteprimaria: "Open Sans", sans-serif;
+  --fuenteroboto: "Roboto", sans-serif;
+  --larga: 45px;
+  --mediana: 16px;
+  --pequeña: 14px;
+  --Expequeña: 10px;
 }
-
-
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.contenedor-grid {
+  display: grid;
+  min-height: 100vh;
+  
+}
+
+.contenedor-flex {
+  display: flex;
+  
+}
+
+/* Distrucion */
+header, aside, main, footer{
+    padding: 50px;
+    background-color: blue;
+    
+    padding: 0;
+    margin: 0;
+}
+    
+
+
+
+header {
+  grid-area: A;
+
+
+}
+
+aside {
+  grid-area: B;
+}
+main {
+  grid-area: C;
+}
+
+footer {
+  grid-area: D;
+}
+
+.grid-area {
+    gap: 10px;
+  grid-template-areas:
+    "A A A A"
+    "B C C C"
+    "B C C C"
+    "B C C C"
+    "B C C C"
+    "B C C C"
+    "B C C C"
+    "B C C C"
+    "D D D D ";
+  
     
 }
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
