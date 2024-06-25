@@ -1,0 +1,27 @@
+:root{
+   
+    --gray :#BEC1BB;
+    --white:#fff;
+    --oldsilver: #828485;
+    --fuenteprimaria:"Open Sans", sans-serif;
+    --fuenteroboto:  "Roboto", sans-serif;
+    --larga: 45px;
+    --mediana: 16px;
+    --pequeña: 14px;
+    --Expequeña: 10px;
+
+    
+   
+}
+
+
+
+html {
+    box-sizing: border-box;
+    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
