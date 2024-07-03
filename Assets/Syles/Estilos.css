@@ -28,30 +28,53 @@ body {
 .contenedor-grid {
   display: grid;
 
-  max-width: 100%;
+  max-width: 1580px;
+  margin: 0px auto;
   grid-template-columns: 1fr 7fr;
   grid-template-rows: 1fr 8fr 1fr;
   grid-template-areas:
     "A A A A"
     "B C C C"
     "D D D D";
-  gap: 10px;
+
 }
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 20px;
+  column-gap: 10px;
   row-gap: 10px;
+  margin: 20px;
 }
 
 .imagenes {
-  height: 400px;
-  width: 100%;
+  height: 600px;
+  width: 90%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  
 }
+
+.imagenes button{
+  background-color: blue;
+  padding: 20px;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--fuenteroboto);
+  font-weight: 700;
+  border: none;
+  font-size: 20px;
+
+}
+.imagenes button:hover{
+  cursor: pointer;
+}
+
+
 
 .imagenes:nth-child(1) {
   background-image: url(../img/imagen\ 1.jpeg);
@@ -64,20 +87,22 @@ body {
 }
 .imagenes:nth-child(4) {
   background-image: url(../img/imagen\ 4.jpeg);
-  height: 100% !important;
+  
 }
 
-.contenedor-flex {
-  display: flex;
-}
+
 
 /* Distrucion */
 header,
-aside,
-main,
+
 footer {
   padding: 50px;
-  background-color: blue;
+  background-color: #7c9efb;
+}
+
+aside, 
+main {
+background-color: #f1e0ed;
 }
 
 header {
