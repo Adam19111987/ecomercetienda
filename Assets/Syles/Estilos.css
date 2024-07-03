@@ -51,10 +51,32 @@ gap:10px;
 
 .imagenes{
   height: 400px;
-  width: 100%;
+  width: 400px;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
 
-  background-color:red;
+  
 }
+
+.imagenes:nth-child(1){
+  background-image: url(../img/imagen\ 1.jpeg);
+
+}
+.imagenes:nth-child(2){
+  background-image: url(../img/imagen\ 2.jpeg);
+
+}
+.imagenes:nth-child(3){
+  background-image: url(../img/imagen\ 3.jpeg);
+
+}
+.imagenes:nth-child(4){
+  background-image: url(../img/imagen\ 4.jpeg);
+  height: 100% !important;
+
+}
+
 
 
 .contenedor-flex {
