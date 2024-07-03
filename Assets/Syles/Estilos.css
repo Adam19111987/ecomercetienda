@@ -24,6 +24,45 @@ body {
   padding: 0;
   margin: 0;
 }
+header {
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  color: var(--white);
+  font-family: var(--fuenteroboto);
+  font-weight: 800;
+  padding: 0;
+}
+
+.navegador {
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+  margin-left: 22px;
+}
+.navegador h2 {
+  font-size: 26px;
+  font-family: var(--fuenteroboto);
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.navegador a {
+  list-style: none;
+  text-decoration: none;
+  line-height: 50px;
+  color: #000000;
+  font-size: 23px;
+  font-family: var(--fuenteroboto);
+  font-weight: 700;
+}
+.navegador span {
+  font-size: 17px;
+  color: var(--oldsilver);
+}
 
 .contenedor-grid {
   display: grid;
@@ -31,12 +70,12 @@ body {
   max-width: 1580px;
   margin: 0px auto;
   grid-template-columns: 1fr 7fr;
-  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 7fr 1fr;
   grid-template-areas:
     "A A A A"
     "B C C C"
+    "B C C C"
     "D D D D";
-
 }
 .container {
   display: grid;
@@ -56,10 +95,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  
 }
 
-.imagenes button{
+.imagenes button {
   background-color: blue;
   padding: 20px;
   color: var(--white);
@@ -68,18 +106,18 @@ body {
   font-weight: 700;
   border: none;
   font-size: 20px;
-
 }
-.imagenes button:hover{
+.imagenes button:hover {
   cursor: pointer;
 }
 
-.imagenes h3, p{
+.imagenes h3,
+p {
   font-family: var(--fuenteroboto);
   color: #808080;
   text-align: center;
 }
-.imagenes h3{
+.imagenes h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 1px;
@@ -96,22 +134,22 @@ body {
 }
 .imagenes:nth-child(4) {
   background-image: url(../img/imagen\ 4.jpeg);
-  
 }
 
-
+.imagenes:nth-child(5) {
+  background-image: url(../img/imagen\ 5.jpg);
+}
 
 /* Distrucion */
 header,
-
 footer {
   padding: 50px;
   background-color: #7c9efb;
 }
 
-aside, 
+aside,
 main {
-background-color: #f1e0ed;
+  background-color: #f1e0ed;
 }
 
 header {
