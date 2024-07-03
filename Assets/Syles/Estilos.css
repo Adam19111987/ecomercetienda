@@ -20,11 +20,42 @@ html {
   box-sizing: inherit;
 }
 
+body{
+  padding: 0;
+  margin: 0;
+}
+
 .contenedor-grid {
   display: grid;
   min-height: 100vh;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-areas: "A A A A"
+                        "B C C C"
+                        "D D D D";
+gap:10px;
+              
+
+
   
 }
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+ column-gap: 20px;
+ row-gap: 10px;
+  
+
+  }
+
+.imagenes{
+  height: 400px;
+  width: 100%;
+
+  background-color:red;
+}
+
 
 .contenedor-flex {
   display: flex;
@@ -36,8 +67,7 @@ header, aside, main, footer{
     padding: 50px;
     background-color: blue;
     
-    padding: 0;
-    margin: 0;
+
 }
     
 
@@ -58,20 +88,4 @@ main {
 
 footer {
   grid-area: D;
-}
 
-.grid-area {
-    gap: 10px;
-  grid-template-areas:
-    "A A A A"
-    "B C C C"
-    "B C C C"
-    "B C C C"
-    "B C C C"
-    "B C C C"
-    "B C C C"
-    "B C C C"
-    "D D D D ";
-  
-    
-}
