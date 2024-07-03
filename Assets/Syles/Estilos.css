@@ -74,7 +74,11 @@ body {
   cursor: pointer;
 }
 
-
+.imagenes h3, p{
+  font-family: var(--fuenteroboto);
+  color: #808080;
+  text-align: center;
+}
 
 .imagenes:nth-child(1) {
   background-image: url(../img/imagen\ 1.jpeg);
